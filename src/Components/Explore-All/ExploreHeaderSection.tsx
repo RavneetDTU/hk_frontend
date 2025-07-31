@@ -7,9 +7,9 @@ import { Star, PlayCircle } from "lucide-react";
 
 export const ExploreHeroSection = () => {
   return (
-    <section className="py-10 bag-[#F9F4F1] bg-gray-50 w-full h-full">
+    <section className="py-10 bag-[#F9F4F1] bg-[#F9F4F1] w-full h-full">
       {/* Text */}
-      <div className="h-full container mx-auto px-4 md:px-8 lg:px-12 flex items-center justify-between">
+      <div className="h-full container mx-auto px-4 md:px-8 lg:px-12 flex flex-col gap-6 md:gap-4 md:flex-row items-center justify-between">
         <div className="text-center lg:text-left max-w-xl space-y-6">
           <div className="flex items-center justify-center lg:justify-start gap-2 text-yellow-500 text-sm font-medium">
             {[...Array(5)].map((_, i) => (
@@ -72,7 +72,7 @@ export const ExploreHeroSection = () => {
         </div>
 
         {/* Image */}
-        <div className="w-1/2 h-full relative">
+        <div className="w-full md:w-1/2 h-full relative">
           <div className="overflow-hidden rounded-t-full">
             <Image
               src={doctorImg}

@@ -28,9 +28,9 @@ With a wealth of experience in nutrition, tech, and recruitment, the two joined 
 
 export const FoundersSection = () => {
   return (
-    <section className="py-10 bag-[#F9F4F1] bg-gray-50 w-full">
+    <section className=" bag-[#F9F4F1] bg-[#F9F4F1] w-full">
       <div className="h-full container mx-auto px-4 md:px-8 lg:px-12">
-        <h2 className="text-3xl md:text-5xl font-bold text-center text-blue-900">
+        <h2 className="text-3xl pb-4 md:text-5xl font-bold text-center text-blue-900">
           Meet Our Founders
         </h2>
 
@@ -56,10 +56,10 @@ export const FoundersSection = () => {
 
             {/* Content */}
             <div className="w-full lg:w-1/2 space-y-4">
-              <h3 className="text-xl md:text-2xl font-bold text-blue-900">
+              <h3 className="text-xl md:text-2xl mb-0.5 font-bold text-blue-900">
                 {founder.name}
               </h3>
-              <p className="text-gray-700 text-sm whitespace-pre-line">
+              <p className="text-gray-700 text-sm whitespace-pre-line pb-4">
                 {founder.description}
               </p>
             </div>

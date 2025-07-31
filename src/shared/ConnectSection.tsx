@@ -7,9 +7,9 @@ import { TfiEmail } from "react-icons/tfi";
 
 const ConnectSection = () => {
   return (
-    <div className=" w-full py-8 bg-gray-50 bag-[#F9F4F1] flex items-center">
+    <div className=" w-full py-8 bg-[#F9F4F1] flex items-center">
       <div className="container mx-auto px-4 md:px-8 lg:px-12 ">
-        <section className="max-w-5xl mx-auto py-8 px-4 border border-gray-200 bg-gradient-to-br from-[#dde7ffe7] via-[#C3DBFF] to-[#b0ceffd0] rounded-lg shadow-lg">
+        <section className="max-w-5xl mx-auto py-8 px-4 border border-gray-200 bg-gradient-to-br from-blue-100 to-emerald-100 rounded-lg shadow-lg">
           {" "}
           <div className=" mx-auto text-center">
             {/* Heading */}
@@ -29,7 +29,7 @@ const ConnectSection = () => {
             </p>
 
             {/* Contact Methods */}
-            <div className="flex flex-col sm:flex-row justify-center gap-6 md:gap-10">
+            <div className="flex flex-row  flex-wrap justify-center gap-6 md:gap-10">
               {/* Instagram */}
               <Link
                 href="https://instagram.com/yourprofile"

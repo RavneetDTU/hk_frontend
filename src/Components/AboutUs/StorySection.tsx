@@ -4,7 +4,7 @@ import founderImage from "@/assets/about-founder-img.png";
 
 const StorySection = () => {
   return (
-    <section className="bg-white py-12 md:py-20 px-4 sm:px-6 lg:px-8">
+    <section className="bg-[#F4F8F9] py-12 md:py-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto px-4 md:px-8 lg:px-12">
         <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-12">
           {/* Left Column - Image */}

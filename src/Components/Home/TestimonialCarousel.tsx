@@ -53,7 +53,7 @@ const TestimonialsCarousel = () => {
   }, [testimonials.length]);
 
   return (
-    <section className="py-10 bag-[#F9F4F1] bg-gray-50 w-full">
+    <section className="py-10 bg-[#F9F4F1] w-full">
       <div className="h-full container mx-auto px-4 md:px-8 lg:px-12">
         {/* Main testimonial text */}
         <div className="mb-10 text-center">
@@ -70,7 +70,7 @@ const TestimonialsCarousel = () => {
                 <button
                   key={testimonial.id}
                   onClick={() => setActiveIndex(index)}
-                  className={`relative w-16 h-16 md:w-20 md:h-20 lg:w-36 lg:h-16  p-4 rounded-lg transition-all duration-300 ${activeIndex === index ? 'bg-gray-100 scale-110 shadow-md' : ''}`}
+                  className={`relative w-24 h-12 lg:w-36 lg:h-16  p-4 rounded-lg transition-all duration-300 ${activeIndex === index ? 'bg-gray-100 scale-110 shadow-md' : ''}`}
                 >
                   <Image
                     src={testimonial.image}

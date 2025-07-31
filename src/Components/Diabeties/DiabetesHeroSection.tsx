@@ -4,11 +4,11 @@ import DiabetesHeroImg from "@/assets/diabetes/DIABETES-BANNER-1-533.33x375.33.j
 
 const DiabetesHeroSection = () => {
   return (
-    <section className="min-h-screen flex items-center bg-gray-50 py-12 md:py-16 lg:py-20">
+    <section className="h-full md:min-h-screen flex items-center bg-[#F9F4F1] py-8 md:py-16 lg:py-20">
       {/* Hero Section */}
       <div className="container mx-auto px-4 md:px-8 lg:px-12 flex flex-col items-center gap-8 md:gap-12 lg:gap-16">
         {/* Content Container */}
-        <div className="w-4/5 flex flex-col items-center text-center ">
+        <div className="w-full md:w-4/5 flex flex-col items-center text-center ">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-2 md:mb-4">
             India`s First Doctor-led to weight loss program for <br></br>
           </h1>

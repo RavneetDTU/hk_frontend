@@ -4,7 +4,7 @@ import HeroImage from "@/assets/aboutHeroImg.png";
 
 const AboutHeroSection = () => {
   return (
-    <section className="py-10 bg-[#CFC9BC] w-full ">
+    <section className="py-10 bg-[#F9F4F1] w-full ">
       <div className="max-w-7xl mx-auto container px-4 md:px-8 lg:px-12">
         <div className="flex flex-col lg:flex-row items-center justify-around gap-8 space-y-8 lg:space-y-14">
           {/* Left Column - Text Content */}

@@ -34,7 +34,7 @@ const HomeSuccessStories = () => {
   ];
 
   return (
-    <section className="py-10 bg-gray-50 w-full">
+    <section className="py-10 bg-[#F9F4F1] w-full">
       <div className="h-full container mx-auto px-4 md:px-8 lg:px-12">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
           Our Success Stories

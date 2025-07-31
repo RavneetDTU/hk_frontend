@@ -22,13 +22,13 @@ export const HealthStats = () => {
   ];
 
   return (
-    <section className="py-8 bg-gray-50 bag-[#F9F4F1]">
+    <section className="py-8  bg-[#F9F4F1]">
       <div className="h-full container mx-auto px-4 md:px-8 lg:px-12">
         <h2 className="text-3xl font-bold text-center mb-8">
           40 Million+ Users Healthified{" "}
         </h2>
         <div className="w-full">
-          <div className="hidden md:grid md:grid-cols-4 md:gap-4 md:h-[70vh]">
+          <div className="grid grid-col-1 md:grid-cols-4 gap-4 h-full">
             {stats.map((stat, index) => (
               <div
                 key={index}
@@ -37,8 +37,10 @@ export const HealthStats = () => {
                 <Image
                   src={stat.image}
                   alt="Healthified Image"
-                  fill
-                  className="object-cover"
+                  width={0}
+                  height={0}
+                  sizes="(max-width: 768px) 100vw, (min-width: 769px) 50vw"
+                  className="object-cover object-bottom w-full h-56 md:h-full"
                 />
                 
               </div>

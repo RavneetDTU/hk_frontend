@@ -49,7 +49,7 @@ const DoctorTeamSection = () => {
   ];
 
   return (
-    <section className="py-10 bg-gray-50 bag-[#F9F4F1] w-full">
+    <section className="py-10 bg-[#F9F4F1] w-full">
       <div className="h-full container mx-auto px-4 md:px-8 lg:px-12">
         {/* Section Header */}
         <div className="text-center mb-10">

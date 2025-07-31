@@ -7,8 +7,8 @@ import DieseaseManageImg from "@/assets/explore-all/EXPLORE-ALL-BANNER-3-548x520
 
 export const DiseaseManagementSection = () => {
   return (
-    <section className="py-10 bag-[#F9F4F1] bg-gray-50 w-full">
-      <div className="h-full container mx-auto px-4 md:px-8 lg:px-12 flex items-center justify-around">
+    <section className="py-10 bag-[#F9F4F1] bg-[#F9F4F1] w-full">
+      <div className="h-full container mx-auto px-4 md:px-8 lg:px-12 flex flex-col-reverse gap-6 md:gap-4 md:flex-row items-center justify-around">
         {/* Image Section */}
         <div className="w-full lg:w-1/2 flex justify-center">
           <div className="rounded-3xl overflow-hidden w-full max-w-md lg:max-w-full">
@@ -23,7 +23,7 @@ export const DiseaseManagementSection = () => {
         </div>
 
         {/* Text Content */}
-        <div className="w-full lg:w-2/5 space-y-8">
+        <div className="w-full lg:w-2/5 space-y-4 md:space-y-8">
           {/* Badge */}
           <div className="text-blue-600 font-medium text-lg">• About us</div>
 
