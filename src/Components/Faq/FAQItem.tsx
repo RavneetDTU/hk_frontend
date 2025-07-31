@@ -8,7 +8,7 @@ export const FAQItem = ({ question, answer }: { question: string; answer: string
     <div className="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
       <button
         onClick={() => setOpen(!open)}
-        className="w-full flex justify-between items-center p-5 text-left bg-white hover:bg-gray-50 transition-colors"
+        className="w-full flex justify-between items-center p-5 text-left bg-white hover:bg-[#F4F8F9] transition-colors"
         aria-expanded={open}
       >
         <span className="text-lg font-medium text-gray-800 md:text-xl">{question}</span>

@@ -46,21 +46,21 @@ export const OurValuesSection = () => {
   ];
 
   return (
-    <section className="py-10 bag-[#F9F4F1] bg-gray-50 w-full">
+    <section className="pb-10 bag-[#F9F4F1] bg-[#F9F4F1] w-full">
       <div className="h-full container mx-auto px-4 md:px-8 lg:px-12">
         {/* Header */}
         <div className="space-y-2 p-4 flex flex-col items-center justify-center">
           <p className="text-sm font-semibold text-blue-600 uppercase">
             Our Values
           </p>
-          <h2 className=" w-full md:w-2/3 text-3xl md:text-5xl font-bold text-gray-900">
+          <h2 className=" w-full md:w-2/3 text-3xl md:text-5xl font-bold text-gray-900 text-center">
             Our values are the driving force behind everything we do at
             HealthiClick
           </h2>
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 rounded-xl ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-3 md:p-6 rounded-xl ">
           {values.map((value, index) => (
             <ValueCard
               key={index}

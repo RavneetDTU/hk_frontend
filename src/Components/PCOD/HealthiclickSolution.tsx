@@ -4,7 +4,7 @@ import SolutionImage from "@/assets/pcod/PCOD-BANNER-3-480x330.jpg"
 
 const HealthiclickSolution = () => {
   return (
-    <section className="py-8 bg-gray-50 bag-[#F9F4F1]">
+    <section className="py-8 bg-[#F9F4F1] bag-[#F9F4F1]">
       <div className="h-full container mx-auto px-4 md:px-8 lg:px-12 border border-gray-300 p-4 rounded-lg shadow-lg">
         <h1 className="text-3xl text-center sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               The Healthiclick Solution

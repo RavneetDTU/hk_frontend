@@ -4,7 +4,7 @@ import CoachingImage from "@/assets/home-page/consultingImage.png";
 
 const CoachingSection = () => {
   return (
-    <section className="min-h-screen w-full py-8 bg-gray-50 bsdg-[#F9F4F1] ">
+    <section className="min-h-screen w-full py-8 bg-[#F9F4F1] ">
       <div className="h-full container mx-auto px-4 md:px-8 lg:px-12">
         <div className="mb-10 ">
           <p className=" w-3/4 text-center text-5xl font-semibold mx-auto">

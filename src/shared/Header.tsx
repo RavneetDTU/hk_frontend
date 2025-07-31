@@ -1,18 +1,19 @@
 "use client";
 
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { FaHeartbeat } from "react-icons/fa"; 
+import { useState } from "react";
 
 export const Header = () => {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { name: 'FAQ', path: '/faq' },
-    { name: 'Success', path: '/success-stories' },
-    { name: 'Management', path: '/management' },
-    { name: 'How it works', path: '/how-it-works' },
+    { name: "FAQ", path: "/faq" },
+    { name: "Success", path: "/success-stories" },
+    { name: "Management", path: "/management" },
+    { name: "How it works", path: "/how-it-works" },
   ];
 
   return (
@@ -20,9 +21,10 @@ export const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link href="/" className="text-2xl font-bold text-indigo-600">
+            <FaHeartbeat className="inline-block mr-2 " />
             HealthiClick
           </Link>
-          
+
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-6">
             {navItems.map((item) => (
@@ -31,17 +33,18 @@ export const Header = () => {
                 href={item.path}
                 className={`${
                   pathname === item.path
-                    ? 'text-indigo-600 font-medium'
-                    : 'text-gray-700 hover:text-indigo-500'
+                    ? "text-indigo-600 font-medium"
+                    : "text-gray-700 hover:text-indigo-500"
                 }`}
               >
                 {item.name}
               </Link>
             ))}
-
           </nav>
 
-          <button className=' bg-blue-700 px-6 py-3 text-white rounded-full'>Get Start</button>
+          <button className="hidden md:flex bg-blue-700 px-6 py-3 text-white rounded-full">
+            Get Start
+          </button>
 
           {/* Mobile menu button */}
           <button
@@ -58,7 +61,11 @@ export const Header = () => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth={2}
-                d={mobileMenuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'}
+                d={
+                  mobileMenuOpen
+                    ? "M6 18L18 6M6 6l12 12"
+                    : "M4 6h16M4 12h16M4 18h16"
+                }
               />
             </svg>
           </button>
@@ -73,14 +80,18 @@ export const Header = () => {
                 href={item.path}
                 className={`block px-2 py-1 ${
                   pathname === item.path
-                    ? 'text-indigo-600 font-medium'
-                    : 'text-gray-700 hover:text-indigo-500'
+                    ? "text-indigo-600 font-medium"
+                    : "text-gray-700 hover:text-indigo-500"
                 }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.name}
               </Link>
             ))}
+
+            <button className="flex md:hidden bg-blue-700 px-6 py-3 text-white rounded-full">
+              Get Start
+            </button>
           </nav>
         )}
       </div>

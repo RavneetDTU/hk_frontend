@@ -49,7 +49,7 @@ const ContactUs = () => {
   ];
 
   return (
-    <section className="min-h-screen w-full py-8 bg-gray-50 bag-[#F9F4F1] flex items-center">
+    <section className="min-h-screen w-full py-8 bg-[#F9F4F1] flex items-center">
       <div className="container mx-auto px-4 md:px-8 lg:px-12">
         <div className="text-center mb-10">
           <div className="flex justify-center space-x-6 text-sm font-medium text-gray-500">
@@ -62,15 +62,15 @@ const ContactUs = () => {
           </h2>
         </div>
 
-        <div className="flex flex-col gap-12 md:flex-row h-[80vh] overflow-hidden">
+        <div className="flex flex-col gap-12 md:flex-row md:h-[80vh] overflow-hidden">
           {/* Image Container */}
           <div className="w-full md:w-1/2 h-full relative">
             <Image
               src={ContactUsImage}
               alt="ContactUsBanner"
-              fill
-              className="object-cover rounded-lg"
-              quality={90}
+              width={0}
+              height={0}
+              className="object-cover rounded-lg w-full h-full"
             />
           </div>
 

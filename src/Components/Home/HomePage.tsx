@@ -9,14 +9,23 @@ import TestimonialsCarousel from "./TestimonialCarousel";
 import DoctorTeamSection from "@/shared/DoctorsTeam";
 import ConnectSection from "@/shared/ConnectSection";
 import Footer from "@/shared/Footer";
+import MobileCoachSection from "@/shared/MobileCoachSection";
 
 function HomePage() {
   return (
     <div>
       <Header />
       <HeroSection />
+
       <ContactUs />
-      <CoachingSection />
+
+      <div className="hidden md:flex ">
+        <CoachingSection />
+      </div>
+      <div className="flex md:hidden w-full  bg-[#F9F4F1]">
+        <MobileCoachSection />
+      </div>
+
       <HealthStats />
       <HomeSuccessStories />
       <TestimonialsCarousel />

@@ -10,29 +10,26 @@ export const ExploreWorksSection = () => {
       title: "Share your preferences",
       description:
         "Tell us about your unique needs and preferences to help us create a personalized plan for your care.",
-      image:
-        "https://images.unsplash.com/photo-1607746882042-944635dfe10e", 
+      image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
     },
     {
       number: "02",
       title: "Customized solutions",
       description:
         "We analyze your requirements and craft tailored solutions designed specifically for your goals.",
-      image:
-        "https://images.unsplash.com/photo-1607746882042-944635dfe10e", 
+      image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
     },
     {
       number: "03",
       title: "Achieve your vision",
       description:
         "Experience seamless results as we bring your perfect vision to life with precision and care.",
-      image:
-        "https://images.unsplash.com/photo-1607746882042-944635dfe10e", 
+      image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
     },
   ];
 
   return (
-    <section className="py-10 bag-[#F9F4F1] bg-gray-50 w-full">
+    <section className=" bag-[#F9F4F1] bg-[#F9F4F1] w-full">
       <div className="h-full container mx-auto px-4 md:px-8 lg:px-12 space-y-12 text-center">
         {/* Badge and Heading */}
         <div className="space-y-2">
@@ -48,12 +45,16 @@ export const ExploreWorksSection = () => {
           {steps.map((step) => (
             <div key={step.number} className="space-y-4">
               {/* Step Number */}
-              <div className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-500 text-white text-sm font-bold">
-                {step.number}
-              </div>
+              <div className="flex  flex-row items-center md:items-start md:flex-col gap-4">
+                <div className="w-10 h-10 flex items-center justify-center rounded-full bg-[#F9F4F1]0 text-white text-sm font-bold">
+                  {step.number}
+                </div>
 
-              {/* Title */}
-              <h3 className="text-lg font-semibold text-gray-900">{step.title}</h3>
+                {/* Title */}
+                <h3 className="text-lg font-semibold text-gray-900">
+                  {step.title}
+                </h3>
+              </div>
 
               {/* Description */}
               <p className="text-sm text-gray-600">{step.description}</p>

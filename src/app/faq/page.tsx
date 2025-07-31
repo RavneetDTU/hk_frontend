@@ -20,7 +20,7 @@ export default function Page() {
   const [activeTab, setActiveTab] = useState<Category>("Weight Loss");
 
   return (
-    <main className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-[#F9F4F1]">
       <Header/>
       <div className="container mx-auto px-4 md:px-8 lg:px-12 py-8">
         <FAQHeader

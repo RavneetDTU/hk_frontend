@@ -13,13 +13,13 @@ export default function Testimonials() {
   }, [fetchTestimonials]);
 
   return (
-    <div className="py-10 bg-gray-50 bag-[#F9F4F1] w-full">
+    <div className="py-10 bg-[#F9F4F1] bag-[#F9F4F1] w-full">
       <div className="h-full container mx-auto px-4 md:px-8 lg:px-12 text-center">
         <p className="text-sm text-gray-500">Reviews</p>
         <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">
           Testimonials from our clients & partners
         </h2>
-        <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full mb-8">
+        <button className="bg-[#F4F8F9]0 hover:bg-blue-600 text-white px-6 py-2 rounded-full mb-8">
           Integrations
         </button>
 

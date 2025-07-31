@@ -5,7 +5,7 @@ import { PhoneIcon, MailIcon, MapPin } from "lucide-react";
 
 export default function ConsultationForm() {
   return (
-    <section className="bg-gray-50 px-4 py-12">
+    <section className="bg-[#F4F8F9] px-4 py-12">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* Text Section */}
         <div className="space-y-6">
@@ -33,14 +33,14 @@ export default function ConsultationForm() {
         </div>
 
         {/* Form Section */}
-        <form className="bg-[#FDF9F7] border rounded-2xl p-6 md:p-8 space-y-4 shadow-sm">
+        <form className="bg-white border border-gray-300 rounded-2xl p-6 md:p-8 space-y-4 shadow-sm">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label className="block text-sm mb-1">Name</label>
               <input
                 type="text"
                 placeholder="Jane smith"
-                className="w-full border rounded-lg px-4 py-2 text-sm"
+                className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm"
               />
             </div>
             <div>
@@ -48,7 +48,7 @@ export default function ConsultationForm() {
               <input
                 type="text"
                 placeholder="(123) 456 789"
-                className="w-full border rounded-lg px-4 py-2 text-sm"
+                className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm"
               />
             </div>
             <div>
@@ -56,14 +56,14 @@ export default function ConsultationForm() {
               <input
                 type="email"
                 placeholder="test@gmail.com"
-                className="w-full border rounded-lg px-4 py-2 text-sm"
+                className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm"
               />
             </div>
             <div>
               <label className="block text-sm mb-1">Select date*</label>
               <input
                 type="date"
-                className="w-full border rounded-lg px-4 py-2 text-sm"
+                className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm"
               />
             </div>
           </div>
@@ -73,7 +73,7 @@ export default function ConsultationForm() {
             <textarea
               rows={4}
               placeholder="Write your idea"
-              className="w-full border rounded-lg px-4 py-2 text-sm"
+              className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm"
             ></textarea>
           </div>
 

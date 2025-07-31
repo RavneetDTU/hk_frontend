@@ -33,7 +33,7 @@ const PcodFeaturesSection = () => {
   ];
 
   return (
-    <section className="py-2 bg-gray-50 bag-[#F9F4F1] w-full">
+    <section className="py-2 bg-[#F9F4F1] w-full">
       <div className="h-full container mx-auto px-4 md:px-8 lg:px-12">
         {/* Header */}
         <div className="text-center mb-4 md:mb-8">
@@ -51,7 +51,7 @@ const PcodFeaturesSection = () => {
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="p-6 bg-gray-50 rounded-lg hover:bg-purple-50 transition duration-300"
+                  className="p-6 bg-[#F9F4F1] rounded-lg hover:bg-purple-50 transition duration-300"
                 >
                   <h3 className="text-xl flex items-center gap-3 font-bold text-purple-800 mb-2">
                     {feature.Image}
