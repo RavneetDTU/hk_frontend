@@ -5,7 +5,7 @@ import { PhoneIcon, MailIcon, MapPin } from "lucide-react";
 
 export default function ConsultationForm() {
   return (
-    <section className="bg-[#F4F8F9] px-4 py-12">
+    <section className=" bg-[#F9F4F1] px-4 py-12">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* Text Section */}
         <div className="space-y-6">

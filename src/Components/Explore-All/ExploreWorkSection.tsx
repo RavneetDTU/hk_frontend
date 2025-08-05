@@ -46,7 +46,7 @@ export const ExploreWorksSection = () => {
             <div key={step.number} className="space-y-4">
               {/* Step Number */}
               <div className="flex  flex-row items-center md:items-start md:flex-col gap-4">
-                <div className="w-10 h-10 flex items-center justify-center rounded-full bg-[#F9F4F1]0 text-white text-sm font-bold">
+                <div className="w-10 h-10 flex items-center justify-center rounded-full bg-[#F9F4F1] text-white text-sm font-bold">
                   {step.number}
                 </div>
 

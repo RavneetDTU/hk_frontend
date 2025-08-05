@@ -7,7 +7,7 @@ import workHeroImg from "@/assets/how-it-works/HOW-IT-WORK-BANNER-1-556x469.jpg"
 
 export default function WorkHeroSection() {
   return (
-    <section className="bg-[#F4F8F9] border border-[#F7E5DE] rounded-xl px-4 py-8 md:py-12 md:px-8">
+    <section className=" bg-[#F9F4F1] border border-[#F7E5DE] rounded-xl px-4 py-8 md:py-12 md:px-8">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         {/* Text Section */}
         <div className="space-y-4 text-center lg:text-left">
