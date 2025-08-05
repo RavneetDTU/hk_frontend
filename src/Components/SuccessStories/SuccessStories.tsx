@@ -5,7 +5,7 @@ import { successStories } from './data/successStoriesData';
 
 const SuccessStories = () => {
   return (
-    <section className="bg-[#F4F8F9] py-12 md:py-20 px-4 sm:px-6 lg:px-8">
+    <section className=" bg-[#F9F4F1] py-12 md:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Client Success Stories</h2>

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FaHeartbeat } from "react-icons/fa"; 
+import { FaHeartbeat } from "react-icons/fa";
 import { useState } from "react";
 
 export const Header = () => {
@@ -42,9 +42,14 @@ export const Header = () => {
             ))}
           </nav>
 
-          <button className="hidden md:flex bg-blue-700 px-6 py-3 text-white rounded-full">
-            Get Start
-          </button>
+          <Link
+            href="https://hokf559m6io.typeform.com/to/NgpDjwtO"
+            target="_blank "
+          >
+            <div className="hidden md:flex bg-blue-700 px-6 py-3 text-white rounded-full">
+              Get Start
+            </div>
+          </Link>
 
           {/* Mobile menu button */}
           <button
