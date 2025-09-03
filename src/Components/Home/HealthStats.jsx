@@ -25,7 +25,7 @@ export const HealthStats = () => {
     <section className="py-8  bg-[#F9F4F1]">
       <div className="h-full container mx-auto px-4 md:px-8 lg:px-12">
         <h2 className="text-3xl font-bold text-center mb-8">
-          40 Million+ Users Healthified{" "}
+          10,000 Users Healthified{" "}
         </h2>
         <div className="w-full">
           <div className="grid grid-col-1 md:grid-cols-4 gap-4 h-full">
