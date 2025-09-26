@@ -1,37 +1,211 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# HealthiClick Web UI
+
+A modern web UI for HealthiClick (describe purpose: scheduling, patient engagement, analytics, etc.).
+
+## Table of Contents
+- Overview
+- Features
+- Tech Stack
+- Project Structure
+- Getting Started
+- Environment Configuration
+- Running the App
+- Build & Deployment
+- Testing
+- Linting & Formatting
+- Scripts Reference
+- Dependency Management
+- VS Code Settings (optional)
+- Troubleshooting
+- Contributing
+- Security
+- License
+
+## Overview
+Brief description of what the application does, who uses it, and core value.
+
+## Features
+- Authentication (e.g. JWT / OAuth / Keycloak)  
+- Role-based access (e.g. admin, clinician, patient)  
+- Dashboards / Analytics  
+- Forms & Validation  
+- API integration  
+- Responsive UI / Accessibility (WCAG)  
+(Adjust this list.)
+
+## Tech Stack
+Frontend: ( Next.js )  
+Language: (TypeScript )  
+State Mgmt: (Zustand)  
+UI Library: (Tailwind )  
+HTTP: (Axios / fetch)  
+Auth: (Custom)  
+Build Tool: ( Webpack/ next.js)  
+Linting: ESLint  
+Formatting: Prettier  
+CI/CD: (GitHub Actions / other)  
+Container: (Dockerfile if exists)
+
+## Project Structure
+```
+healthiclick-web-ui/
+  README.md
+  package.json
+  requirement.txt      
+  src/
+    components/
+    pages/ (or routes/)
+    hooks/
+    services/
+    store/
+    assets/
+    styles/
+  public/
+  tests/
+  .env.example
+```
+(Replace with actual tree.)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node >= 18.x LTS
+- npm or yarn or pnpm
+- (If Python backend utilities:) Python 3.11+, pip
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Clone
+```
+git clone https://github.com/<org>/healthiclick-web-ui.git
+cd healthiclick-web-ui
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install Dependencies
+Using npm:
+```
+npm install
+```
+Or:
+```
+yarn install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+(If Python utilities exist:)
+```
+pip install -r requirement.txt
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Environment Configuration
+Create a `.env.local` (or `.env`) based on `.env.example`.
 
-## Learn More
+Example:
+```
+API_BASE_URL=https://api.example.com
+AUTH_DOMAIN=...
+AUTH_CLIENT_ID=...
+SENTRY_DSN=
+ANALYTICS_KEY=
+```
 
-To learn more about Next.js, take a look at the following resources:
+Never commit secrets.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Running the App (Development)
+```
+npm run dev
+```
+Then open: http://localhost:3000 (adjust if different).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Build (Production)
+```
+npm run build
+npm run start
+```
 
-## Deploy on Vercel
+## Testing
+Unit:
+```
+npm test
+```
+Watch:
+```
+npm test -- --watch
+```
+E2E (example):
+```
+npx cypress open
+```
+Or Playwright:
+```
+npx playwright test
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Linting & Formatting
+```
+npm run lint
+npm run format
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# hk_frontend
+## Scripts Reference (sample)
+(Adjust to your package.json.)
+```
+"scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "lint": "eslint .",
+  "format": "prettier --write .",
+  "test": "jest"
+}
+```
+
+## Dependency Management
+
+### JavaScript/TypeScript
+Primary dependencies are defined in `package.json`. To view exact versions:
+```
+npm ls --depth=0
+```
+
+### requirement.txt
+Currently empty. To populate (if Python part exists):
+1. Create/activate virtualenv.
+2. Install required libs.
+3. Freeze:
+```
+pip freeze > requirement.txt
+```
+
+If the file is meant for Node dependencies, rename it to avoid confusion.
+
+Include a Dependencies section here once you provide `package.json`:
+Example:
+```
+| Library        | Version | Purpose                  |
+|----------------|---------|--------------------------|
+| react          | 18.x    | UI framework             |
+| next           | 14.x    | SSR / routing            |
+| axios          | 1.x     | HTTP client              |
+| @mui/material  | 5.x     | UI components            |
+| redux-toolkit  | 1.x     | State management         |
+| jest           | 29.x    | Unit testing             |
+```
+
+## VS Code Recommendations
+Install:
+- ESLint
+- Prettier
+- GitLens
+- (Tailwind CSS IntelliSense)
+Add `.vscode/extensions.json` with recommended extensions.
+
+## Commit Quality
+Use conventional commits:
+```
+feat: add patient intake form
+fix: correct auth token refresh
+```
+
+## Performance
+- Code splitting
+- Image optimization
+- Caching headers
+- Lighthouse audits
